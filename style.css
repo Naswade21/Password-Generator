@@ -44,11 +44,17 @@ h1{
 }
 
 .gen-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #55F991;
+    font-weight: medium;
     background-color: #273549;
     width: 13rem;
     height: 2.5rem;
     margin-right: 1rem;
     border-radius: .5rem;
+    padding: .5rem 1rem .5rem 1rem;
 }
 
 .straight-line{
