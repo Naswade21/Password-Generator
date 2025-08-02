@@ -1,6 +1,20 @@
 @font-face {
   font-family: 'Inter';
-  src: url('fonts/CustomFont-Regular.woff2') format('woff2');
+  src: url('fonts/Inter_18pt-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter_18pt-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla-ExtraBold.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -8,15 +22,21 @@
 body{
     color: white;
     background-color: #1F2937;
-    margin-left: 3rem;
+    margin: 3rem;
+    font-family: 'Inter';
 }
 
 p{
     font-size: 1.25rem;
+    margin-bottom: 3rem;
 }
 
 h1{
     font-size: 2.5rem;
+    font-family: 'Karla';
+    font-weight: bold;
+    max-width: 22rem;
+    margin-bottom: 1rem;
 }
 
 .green-text{
@@ -44,6 +64,7 @@ button{
     background-color: #10B981;
     color: white;
     border-radius: .5rem;
+    cursor: pointer;
 }
 
 .pwrd-wrap{
