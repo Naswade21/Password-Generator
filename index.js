@@ -3,8 +3,10 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let pOne = document.getElementById("p-one")
 let pTwo = document.getElementById("p-two")
+let random = Math.floor(Math.random()*characters.length)
 
 function activate(){
     pOne.textContent = "Euphoria"
     pTwo.textContent = "Not Like Us"
+    console.log(random)
 }
