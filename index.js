@@ -3,6 +3,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let pOne = document.getElementById("p-one")
 let pTwo = document.getElementById("p-two")
+let lettY = document.getElementById("let-one")
 
 
 function generateRandom(){
