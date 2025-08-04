@@ -5,6 +5,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let pOne = document.getElementById("p-one")
 let pTwo = document.getElementById("p-two")
+let toggleSymbol = document.getElementById("a-switch")
+let toggleNumber = document.getElementById("b-switch")
 
 function generateRandomWord(e){
     let password = "" //hold value generated
@@ -29,6 +31,10 @@ function getClipText2(text){
     navigator.clipboard.writeText(pTwo.textContent)
     console.log("2nd password copied was a success!")
 }
+
+toggleSymbol.addEventListener("change", function(){
+    //MDN Docs String.prototpe.replace chapter and regualar expressions chapter -> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+})
 
 
 
