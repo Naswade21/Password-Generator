@@ -22,7 +22,7 @@
 body{
     color: white;
     background-color: #1F2937;
-    margin: 3rem;
+    padding: 3rem;
     font-family: 'Inter';
 }
 
@@ -65,7 +65,7 @@ h1{
     background-color: #2F3E53;
 }
 
-button{
+button, #submit-btn{
     font-size: 1rem;
     padding: .5rem 1rem .5rem 1rem;
     background-color: #10B981;
@@ -74,9 +74,87 @@ button{
     cursor: pointer;
 }
 
+.switch-labels{
+    margin: .5rem 0 .5rem 0;
+}
+
+
+#p-length{
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.input-wrap, .ts-wrap{
+    margin: 1rem 0 1rem 0;
+}
+
+#p-length::placeholder{
+    color: lightgrey;
+}
+
 .pwrd-wrap{
     display: flex;
     flex-direction: row;
     flex-grow: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #55F991;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #55F991;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 

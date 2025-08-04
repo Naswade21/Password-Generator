@@ -10,6 +10,27 @@
         <h1>Generate a <span class="green-text">random password</span></h1>
         <p id="let-one">Never use an insecure password again.</p>
         <button onclick="activate()">Generate password</button>
+        <div class="input-wrap">
+            <input id="p-length" placeholder="Character length" type="number">
+            <input id="submit-btn" type="submit" value="submit">
+        </div>
+        <div class="toggle-wrao">
+            <div class="ts-wrap">
+                <div class="switch-labels">Include symbols?</div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            </div>
+
+            <div class="ts-wrap">
+                <div class="switch-labels">Include numbers?</div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            </div>
+        </div>
         <div class="straight-line"></div>
         <div class="pwrd-wrap">
             <div id="p-one" onclick="getClipText()" class="gen-p"></div>
