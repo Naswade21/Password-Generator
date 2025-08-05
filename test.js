@@ -8,6 +8,10 @@ let pTwo = document.getElementById("p-two")
 let toggleSymbol = document.getElementById("a-switch")
 let toggleNumber = document.getElementById("b-switch")
 
+function noSymbols(){
+    
+}
+
 function generateRandomWord(e){
     let password = "" //hold value generated
     for (i = 0; i < e; i++){
@@ -32,9 +36,6 @@ function getClipText2(text){
     console.log("2nd password copied was a success!")
 }
 
-toggleSymbol.addEventListener("change", function(){
-    //MDN Docs String.prototpe.replace chapter and regualar expressions chapter -> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
-})
 
 
 
