@@ -28,7 +28,7 @@ body{
 
 p{
     font-size: 1.25rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 h1{
@@ -65,7 +65,7 @@ h1{
     background-color: #2F3E53;
 }
 
-button, #submit-btn{
+button{
     font-size: 1rem;
     padding: .5rem 1rem .5rem 1rem;
     background-color: #10B981;
@@ -80,6 +80,7 @@ button, #submit-btn{
 
 
 #p-length{
+    width: 15rem;
     padding: .5rem 1rem .5rem 1rem;
     border-radius: .5rem;
 }

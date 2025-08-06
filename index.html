@@ -9,10 +9,10 @@
     <section class="container">
         <h1>Generate a <span class="green-text">random password</span></h1>
         <p id="let-one">Never use an insecure password again.</p>
-        <button onclick="activate()">Generate password</button>
+        <p>After you generate a password, <span class="green-text">left-click</span> to copy to clipboard</p>
         <div class="input-wrap">
-            <input id="p-length" placeholder="Character length" type="number">
-            <input id="submit-btn" type="submit" value="submit">
+            <div class="switch-labels">Specify Password Length</div>
+            <input id="p-length" value="15" type="number">
         </div>
         <div class="toggle-wrao">
             <div class="ts-wrap">
@@ -30,6 +30,7 @@
             </label>
             </div>
         </div>
+        <button onclick="activate()">Generate password</button>
         <div class="straight-line"></div>
         <div class="pwrd-wrap">
             <div id="p-one" onclick="getClipText()" class="gen-p"></div>

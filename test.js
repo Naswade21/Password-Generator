@@ -7,6 +7,7 @@ let pOne = document.getElementById("p-one")
 let pTwo = document.getElementById("p-two")
 let toggleSymbol = document.getElementById("a-switch")
 let toggleNumber = document.getElementById("b-switch")
+let passwordLength = document.getElementById("p-length")
 let noNumArray = characters.map(function removeNum(arr){
     return arr.replace(/[0-9]/g, "") 
    })
@@ -16,7 +17,6 @@ let noSymArray = characters.map(function removeSym(arr){
 let noSymNumArray = characters.map(function removeSymNum(arr){
     return arr.replace(/[^a-z]/i, "")
    })
-
 
 function generateRandomWord(e){
     let password = "" //hold value generated
@@ -48,18 +48,29 @@ function generateRandomWord(e){
 }
 
 function activate(){
-    pOne.textContent = generateRandomWord(15)
-    pTwo.textContent = generateRandomWord(15)
+    pOne.textContent = generateRandomWord(passwordLength.value)
+    pTwo.textContent = generateRandomWord(passwordLength.value)
+    console.log(passwordLength.value)
 }
 
 function getClipText(text){ //to copy text and save it, just follow Clipboard API - > writeText() Method give IT A Promise!
+    if(pOne.textContent === ""){
+        alert("Generate a Password, then click to copy!")
+    } else{
     navigator.clipboard.writeText(pOne.textContent)
-    console.log("1st password copied was a success!")
+    console.log("1st password was copied! Enjoy your password!")
+    alert("1st password was copied! Enjoy your password!")
+    }
 }
 
 function getClipText2(text){
-    navigator.clipboard.writeText(pTwo.textContent)
-    console.log("2nd password copied was a success!")
+    if(pOne.textContent === ""){
+        alert("Generate a Password, then click to copy!")
+    } else{
+     navigator.clipboard.writeText(pTwo.textContent)
+    console.log("2nd password was copied! Enjoy your password!")
+    alert("2nd password was copied! Enjoy your password!")
+    }
 }
 
 
