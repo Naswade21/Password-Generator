@@ -40,14 +40,14 @@ h1{
 }
 
 .green-text{
-    color: #4ADF86;
+    color: #FB7185;
 }
 
 .gen-p{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #E11D48;
+    color: #FDA4AF;
     font-weight: medium;
     background-color: #273549;
     width: 13rem;
@@ -68,7 +68,7 @@ h1{
 button{
     font-size: 1rem;
     padding: .5rem 1rem .5rem 1rem;
-    background-color: #F43F5E;
+    background-color: #9F1239;
     color: white;
     border-radius: .5rem;
     cursor: pointer;
