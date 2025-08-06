@@ -47,7 +47,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #55F991;
+    color: #E11D48;
     font-weight: medium;
     background-color: #273549;
     width: 13rem;
@@ -68,7 +68,7 @@ h1{
 button{
     font-size: 1rem;
     padding: .5rem 1rem .5rem 1rem;
-    background-color: #10B981;
+    background-color: #F43F5E;
     color: white;
     border-radius: .5rem;
     cursor: pointer;
@@ -137,11 +137,11 @@ button{
 }
 
 input:checked + .slider {
-  background-color: #55F991;
+  background-color: #E11D48;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #55F991;
+  box-shadow: 0 0 1px #E11D48;
 }
 
 input:checked + .slider:before {
